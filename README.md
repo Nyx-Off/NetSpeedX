@@ -6,6 +6,7 @@ NetSpeedX est une application avancée de test de performance réseau, qui mesur
 - 📶 **Test de latence** : Mesure le temps de réponse du serveur pour les paquets UDP, offrant une indication précise de la qualité de connexion.
 - ⬇️ **Test de débit descendant** : Transfert massif de données du serveur vers le client pour estimer la capacité de téléchargement.
 - ⬆️ **Test de débit montant** : Envoi massif de données du client vers le serveur pour évaluer la vitesse de téléversement.
+- 🌍 **Personnalisation de l'adresse IP du serveur** : Possibilité de changer l'adresse IP du serveur pour effectuer les tests sur différents serveurs, en modifiant la variable `IP_SERVER` dans le code client.
 
 ## 🛠️ Technologies Utilisées
 - 🐍 **Python** : Langage principal pour les scripts serveur et client, garantissant une implémentation rapide et robuste.
@@ -35,7 +36,9 @@ NetSpeedX est une application avancée de test de performance réseau, qui mesur
    git clone https://github.com/username/NetSpeedX.git
    cd NetSpeedX
    ```
-2. **Exécuter le script du client** :
+2. **Modifier l'adresse IP du serveur** (si nécessaire) :
+   Ouvrez le fichier `client.py` et modifiez la variable `IP_SERVER` avec l'adresse IP de votre choix.
+3. **Exécuter le script du client** :
    ```cmd
    python client.py
    ```
@@ -58,18 +61,13 @@ Après avoir effectué les tests, les résultats sont affichés de manière clai
 - **Débit Descendant et Montant** : 💾 Affichés en mégabits par seconde (Mbps), permettant de facilement évaluer la capacité du réseau.
 
 ## 🤝 Contribution
-Nous accueillons chaleureusement toutes les contributions ! 🙌Que ce soit pour corriger des bugs, améliorer les fonctionnalités, ou ajouter de nouvelles idées, n'hésitez pas à créer une issue ou à soumettre une pull request. Merci de contribuer à faire de NetSpeedX un outil encore plus performant.
+Nous accueillons chaleureusement toutes les contributions ! 🙌 Que ce soit pour corriger des bugs, améliorer les fonctionnalités, ou ajouter de nouvelles idées, n'hésitez pas à créer une issue ou à soumettre une pull request. Merci de contribuer à faire de NetSpeedX un outil encore plus performant.
 
 ## 📄 License
 Ce projet est sous licence MIT - consultez le fichier [LICENSE](LICENSE) pour plus de détails.
 
 ## 👥 Auteurs
 - **Nyx-Off** - *Idée originale et développement*
-
-## 💡 Remarques Complémentaires
-- 🔒 **Sécurité** : Assurez-vous que les ports nécessaires sont ouverts et sécurisés pour permettre une connexion sans risque.
-- 🌐 **Compatibilité Réseau** : Fonctionne sur des réseaux locaux et des connexions distantes, ce qui en fait un outil polyvalent pour tester les performances réseau.
-- 📊 **Scalabilité** : NetSpeedX est conçu pour gérer des connexions multiples en parallèle, permettant des tests à grande échelle.
 
 ---
 🚀 **NetSpeedX** - Mesurez. Analysez. Optimisez. 🌟
